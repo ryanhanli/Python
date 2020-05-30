@@ -26,3 +26,19 @@ def shortBubbleSort(alist):
 alist=[20,30,40,90,50,60,70,80,100,110]
 shortBubbleSort(alist)
 print(alist)
+
+def selectionSort(alist):
+   for fillslot in range(len(alist)-1,0,-1):
+       print(fillslot)
+       positionOfMax=0
+       for location in range(1,fillslot+1):
+           if alist[location]>alist[positionOfMax]:
+               positionOfMax = location
+
+       temp = alist[fillslot]
+       alist[fillslot] = alist[positionOfMax]
+       alist[positionOfMax] = temp
+
+alist = [54,26,93,17,77,31,44,55,20]
+selectionSort(alist)
+print(alist)
