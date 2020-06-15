@@ -18,12 +18,10 @@ def speech_to_text():
 		sys.exit()
 	typer.press(Key.enter)
 	typer.release(Key.enter)
-	typer.type(text)
+	typer.type("/all {}".format(text))
 	typer.press(Key.enter)
 	typer.release(Key.enter)
 
 while True:
 	keyboard.wait("9")
 	speech_to_text()
-		
-
