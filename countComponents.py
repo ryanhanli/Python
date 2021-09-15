@@ -26,7 +26,7 @@ class Solution
           
               while res != par[res]:
                 # path compression by setting parent of result equal to its grandparent
-                  res = par[par[res]]
+                  par[res] = par[par[res]]
                   res = par[res]
               return res
           
